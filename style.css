@@ -340,7 +340,7 @@ nav ul li a{
         transform: none;
         background: #FFFFFF;
         box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
-}
+    }
     /* header area styles  */
     .header {
         padding-top: 20px;
@@ -379,7 +379,13 @@ nav ul li a{
         width: 100%;
     }
     .btn-experience {
+        bottom: -15%;
         left: 25%;
+        padding: 10px;
+        font-size: 30px;
+    }
+    .btn-experience span {
+        font-size: 15px;
     }
     /* some facts style  */
     .some-facts {
