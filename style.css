@@ -1,0 +1,481 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+    margin: 0;
+}
+/* in common styles  */
+.header, .g3-quick-feature, .features-info, .some-facts, .sponsors, .projects, .client-review, .footer {
+    padding-left: 230px;
+    padding-right: 230px;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.fact-item, .sponsor-container > img, .project-item, .review-item {
+    transition: transform 2s;
+}
+.fact-item:hover, .sponsor-container > img:hover, .project-item:hover, .review-item:hover {
+    transform: scale(1.2);
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* header area styles  */
+.header{
+    background: rgba(255, 144, 14, 0.1);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .......................
+      nav bar styles
+........................  */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section-title{
+    font-weight: 700;
+    font-size: 280%; /* 45px - 2.80em */
+    color: #131313;
+}
+nav ul{
+    list-style-type: none;
+    display: flex;
+    gap: 50px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    color: #424242;  
+}
+
+/* ................................
+........Architects description styles.....  */
+
+.architect-branding {
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.architect-branding h1 {
+    font-weight: 700;
+    font-size: 400%; /* 4em- 64px */
+    color: #131313;
+    padding: 80px 50px 20px 50px;
+}
+.description {
+    font-weight: 400;
+    font-size: 100%; /* 16px- 1em */
+    line-height: 162%;
+    color: #727272;
+}
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    padding: 20px;
+    background: #FF900E;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    margin: 40px auto;
+}
+.architect-header-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+/* quick feature styles  */
+
+.g3-quick-feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 70px;
+    margin: 85px 0 130px;
+}
+.feature-demo{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 24px;
+}
+.feature-quick-list{
+    width: 500px;
+}
+.feature-quick-list h2, .love-enjoy, .info p, .some-facts .section-title, .sponsors > .section-title, .projects > .section-title {
+    margin-bottom: 25px;
+}
+
+/* feature you will love and enjoy style  */
+
+.features-info {
+    display: flex;
+    gap: 50px;
+}
+.image-area, .info {
+    width: 50%;
+}
+.info .love-enjoy {
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
+.info-container{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 20px;
+}
+.info-item{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 20px;
+}
+.info-item h4{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #131313;
+}
+.btn-experience {
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    background: #FF900E;
+    border: none;
+    border-radius: 8px;
+    padding: 30px;
+    font-weight: 500;
+    font-size: 45px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.image-area {
+    position: relative;
+}
+.btn-experience span {
+    font-size: 25px;
+}
+
+/* some facts style  */
+.some-facts{
+    margin: 130px 0;
+}
+.some-facts > .description{
+    width: 800px;
+    margin-bottom: 50px;
+}
+.facts-container {
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    justify-content: space-between;
+}
+.fact-item{
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: center;
+}
+.fact-item img{
+    width: 45px;
+    height: 45px;
+}
+
+/* sponsor styles  */
+.sponsors , .projects{
+    text-align: center;
+}
+.sponsors > p , .projects > p{
+    margin: 15px auto;
+    width: 800px;
+}
+.sponsor-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 150px;
+    margin-top: 50px;
+}
+.sponsor-container img { 
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%)
+}
+
+/* projects section  */
+.projects {
+    margin: 130px 0;
+}
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+.project-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+.project-item {
+    position: relative;
+    margin: 0 auto;
+}
+.project-item .content {
+    position: absolute;
+    bottom: 0;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1;
+    width: 100%;
+    border-radius: 10px;
+}
+.project-item .content h2{
+    margin-bottom: 5px;
+}
+/* client review styles  */
+.client-review > h2 {
+    text-align: center;
+    margin-bottom: 25px;
+} 
+.review-container{
+    display: grid;
+    grid-gap: 50px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.review-item{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 15px;
+}
+.review-item img{
+    width: 100%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.review-item .title{
+    font-weight: 500;
+    font-size: 28px;
+    color: #18191F;
+    margin-bottom: 10px;
+}
+.star-rating{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.star .fa-solid{
+    width: 11px;
+    height: 11px;
+    color : #FB8200;
+    margin-right: 5px;
+}
+.star-rating p{
+    font-weight: 700;
+    font-size: 14px;
+    color: #5E6366;
+}
+
+/* footer styles  */
+.footer {
+    background: #FFF4E7;
+    border-radius: 8px;
+    margin-top: 130px;
+    text-align: center;
+}
+.footer > p{
+    padding: 30px 250px;
+}
+
+/* responsive design styles for 576px  */
+@media screen and (max-width: 576px) {
+    /* common styles  */
+    .header, .architect-branding, .g3-quick-feature, .features-info, .some-facts, .sponsors, .projects, .client-review, .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* header area styles  */
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .navbar {
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .architect-branding h1 {
+        padding: 20px 0;
+        font-size: 300%;
+    }
+    /* quick feature styles  */
+    .g3-quick-feature {
+        flex-direction: column;
+        text-align: center;
+    }
+    .feature-quick-list{
+        padding: 20px;
+    }
+    .feature-demo{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    /* feature you will love and enjoy style  */
+    .features-info {
+        flex-direction: column;
+    }
+    .image-area, .info {
+        width: 100%;
+    }
+    .btn-experience {
+        left: 25%;
+    }
+    /* some facts style  */
+    .some-facts {
+        padding: 20px;
+        text-align: center;
+    }
+    .facts-container{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 50px;
+        gap: 50px;
+    }
+    .some-facts > .description,
+     .sponsors .description {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    /* sponsor styles   */
+    .sponsor-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        text-align: center;
+        padding: 0 80px;
+    }
+    .sponsor-container img {
+        width: 100%;
+        height: 100%;
+    }
+    /* projects styles  */
+    .project-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .projects .description {
+        width: 100%;
+    }
+    /* clients review  */
+    .review-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .review-item img{
+        height: inherit;
+        width: inherit;
+    }
+    /* footer styles  */
+    .footer > p {
+        padding: 20px;
+    }
+}
+
+/* styles for tablets  */
+@media screen and (min-width: 577px) and (max-width: 992px){
+     /* common styles  */
+     .header, .architect-branding, .g3-quick-feature, .features-info, .some-facts, .sponsors, .projects, .client-review, .footer {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    /* header area styles  */
+    .header {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .navbar {
+        align-items: flex-start;
+    }
+    nav ul {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .architect-branding h1 {
+        padding: 20px 0;
+        font-size: 300%;
+    }
+    /* quick feature styles  */
+    .g3-quick-feature {
+        flex-direction: column;
+        text-align: center;
+    }
+    .feature-quick-list{
+        padding: 20px;
+    }
+    /* feature you will love and enjoy style  */
+    .features-info {
+        flex-direction: column;
+    }
+    .info-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .image-area, .info {
+        width: 100%;
+    }
+    .btn-experience {
+        left: 25%;
+    }
+    /* some facts style  */
+    .some-facts {
+        padding: 20px;
+        text-align: center;
+    }
+    .facts-container{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 50px;
+        gap: 50px;
+    }
+    .some-facts > .description,
+     .sponsors .description {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    /* sponsor styles   */
+    .sponsor-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        text-align: center;
+        padding: 0 80px;
+    }
+    .sponsor-container img {
+        width: 100%;
+        height: 100%;
+    }
+    /* projects styles  */
+    .project-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .projects .description {
+        width: 100%;
+    }
+    /* clients review  */
+    .review-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .review-item img{
+        height: inherit;
+        width: inherit;
+    }
+    /* footer styles  */
+    .footer > p {
+        padding: 20px;
+    }    
+}
