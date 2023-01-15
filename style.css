@@ -331,6 +331,9 @@ nav ul li a{
     .feature-demo{
         grid-template-columns: repeat(1, 1fr);
     }
+    .feature-quick-list{
+        width: 100%;
+    }
     /* feature you will love and enjoy style  */
     .features-info {
         flex-direction: column;
